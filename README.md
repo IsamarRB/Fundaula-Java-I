@@ -137,6 +137,6 @@ Si deseas mejorar o agregar más ejercicios, puedes:
 Para dudas o sugerencias, contáctame en [GitHub](https://github.com/IsamarRB).
 
 ---
-© 2024 IsamarRB - Todos los derechos reservados.
+© 2025 IsamarRB - Todos los derechos reservados.
 
 
