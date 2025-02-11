@@ -1,7 +1,7 @@
 # Ejercicios Adicionales de Java Básico
 
 Este repositorio contiene una serie de ejercicios adicionales de Java Básico, organizados dentro del proyecto **FormacionJava**.
-Cada ejercicio se encuentra en el paquete:
+Los ejercicios se encuentran en el paquete:
 
 ```
 es.accenture.tareaJavaI.ejerciciosParte1
