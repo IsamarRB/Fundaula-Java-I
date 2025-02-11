@@ -7,7 +7,7 @@ Cada ejercicio se encuentra en el paquete:
 es.accenture.tareaJavaI.ejerciciosParte1
 ```
 
-Cada clase en este paquete corresponde a un ejercicio específico y contiene la solución del problema planteado.
+Las clases se encuentra en el paquete *Ejercicios* y cada clase corresponde a un ejercicio específico y contiene la solución del problema planteado.
 
 ---
 

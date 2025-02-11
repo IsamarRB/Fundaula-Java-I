@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>Fundaula</groupId>
-    <artifactId>es.accenture.tareaJavaI.ejerciciosParte1</artifactId>
+    <artifactId>FormacionJava</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>

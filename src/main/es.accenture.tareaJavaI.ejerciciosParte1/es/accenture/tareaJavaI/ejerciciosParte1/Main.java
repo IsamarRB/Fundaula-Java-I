@@ -1,4 +1,4 @@
-package Fundaula;
+package es.accenture.tareaJavaI.ejerciciosParte1;
 
 public class Main {
     public static void main(String[] args) {
