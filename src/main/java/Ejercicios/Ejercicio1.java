@@ -3,12 +3,17 @@ package Ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio1 {
-    public static void ejecutar() {
+    private Scanner scanner;
 
-        Scanner scanner = new Scanner(System.in);
+    // Constructor que recibe Scanner
+    public Ejercicio1(Scanner scanner) {
+        this.scanner = scanner;
+    }
+
+    // Método que ejecuta el ejercicio
+    public void ejecutar() {
         System.out.print("Ejecutando Ejercicio 1: Introduce una palabra: ");
         String palabra = scanner.nextLine();
-        scanner.close();
 
         if (esPalindromo(palabra)) {
             System.out.println("La palabra es un palíndromo.");
@@ -17,8 +22,10 @@ public class Ejercicio1 {
         }
     }
 
-    public static boolean esPalindromo(String palabra) {
+    // Método para verificar si una palabra es palíndromo
+    private boolean esPalindromo(String palabra) {
         String invertida = new StringBuilder(palabra).reverse().toString();
         return palabra.equalsIgnoreCase(invertida);
     }
 }
+

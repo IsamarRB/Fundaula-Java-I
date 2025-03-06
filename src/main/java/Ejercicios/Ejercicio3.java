@@ -3,9 +3,13 @@ package Ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio3 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Elige una figura (circulo, cuadrado, triangulo): ");
+    private  Scanner scanner;
+
+    public Ejercicio3(Scanner scanner) {
+        this.scanner = scanner;
+    }
+    public void ejecutar() {
+        System.out.print("Ejecutando Ejercicio 3: Elige una figura (circulo, cuadrado, triangulo): ");
         String figura = scanner.nextLine().toLowerCase();
 
         double area = 0;
