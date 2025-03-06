@@ -1,8 +1,15 @@
 package Fundaula;
 
+import Ejercicios.Ejercicio1;
+
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Welcome to Ejercicios adicionales de Java Básico!");
-        System.out.println("Elaborados por Isamar Romero Bellorin");
+
+        Object ejecutar;
+        Ejercicio1.ejecutar();
+
+        System.out.println("Fin de los ejercicios.");
     }
 }

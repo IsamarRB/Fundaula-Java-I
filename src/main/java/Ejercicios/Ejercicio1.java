@@ -3,9 +3,10 @@ package Ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio1 {
-    public static void main(String[] args) {
+    public static void ejecutar() {
+
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Introduce una palabra: ");
+        System.out.print("Ejecutando Ejercicio 1: Introduce una palabra: ");
         String palabra = scanner.nextLine();
         scanner.close();
 
