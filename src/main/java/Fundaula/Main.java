@@ -4,9 +4,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Ejecutando todos los ejercicios:");
+        System.out.println(" _____  _               _      _                    _   ___     ___    \n" +
+                "| ____|(_) ___ _ __ ___(_) ___(_) ___  ___         | | / \\ \\   / / \\   \n" +
+                "|  _|  | |/ _ \\ '__/ __| |/ __| |/ _ \\/ __|     _  | |/ _ \\ \\ / / _ \\  \n" +
+                "| |___ | |  __/ | | (__| | (__| | (_) \\__ \\    | |_| / ___ \\ V / ___ \\ \n" +
+                "|_____|/ |\\___|_|  \\___|_|\\___|_|\\___/|___/     \\___/_/   \\_\\_/_/   \\_\\\n" +
+                "     |__/                                                              ");
 
-        // Un solo Scanner para todos los ejercicios
+                // Un solo Scanner para todos los ejercicios
         Scanner scanner = new Scanner(System.in);
 
         for (int i = 1; i <= 22; i++) {
@@ -34,7 +39,11 @@ public class Main {
         }
 
         scanner.close();
-        System.out.println("\nTodos los ejercicios han sido ejecutados. Código por IsamarRB");
+        System.out.println("\n _____ ___ _   _ \n" +
+                "|  ___|_ _| \\ | |\n" +
+                "| |_   | ||  \\| |\n" +
+                "|  _|  | || |\\  |\n" +
+                "|_|   |___|_| \\_|\n");
     }
 }
 

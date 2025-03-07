@@ -9,7 +9,6 @@ public class Ejercicio20 {
         this.scanner = scanner;
     }
     public void ejecutar() {
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Ejecutando Ejercicio 20: ¿Cuántos alumnos vas a registrar? ");
         int cantidad = scanner.nextInt();
         String[] nombres = new String[cantidad];
