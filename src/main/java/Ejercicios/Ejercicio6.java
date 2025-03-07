@@ -3,7 +3,12 @@ package Ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio6 {
-    public static void main(String[] args) {
+    private Scanner scanner;
+
+    public Ejercicio6(Scanner scanner) {
+        this.scanner = scanner;
+    }
+    public void ejecutar() {
         int[] numeros = new int[10];
         pedirNumeros(numeros);
         mostrarNumeros(numeros);
@@ -12,10 +17,9 @@ public class Ejercicio6 {
     public static void pedirNumeros(int[] array) {
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < array.length; i++) {
-            System.out.print("Introduce el número en la posición " + i + ": ");
+            System.out.print("Ejecutando Ejercicio 6: Introduce el número en la posición " + i + ": ");
             array[i] = scanner.nextInt();
         }
-        scanner.close();
     }
 
     public static void mostrarNumeros(int[] array) {

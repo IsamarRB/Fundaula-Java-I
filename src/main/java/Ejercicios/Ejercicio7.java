@@ -4,7 +4,13 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class Ejercicio7 {
-    public static void main(String[] args) {
+    private Scanner scanner;
+
+    public Ejercicio7(Scanner scanner) {
+        this.scanner = scanner;
+    }
+
+    public void ejecutar() {
         int[] numeros = new int[20];
         Random random = new Random();
 
@@ -15,7 +21,6 @@ public class Ejercicio7 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Introduce un dígito (0-9): ");
         int digito = scanner.nextInt();
-        scanner.close();
 
         System.out.println("Números que terminan en " + digito + ":");
         for (int num : numeros) {

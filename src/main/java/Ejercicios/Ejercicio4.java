@@ -11,7 +11,7 @@ public class Ejercicio4 {
     }
 
     public void ejecutar() {
-        System.out.print("Introduce la cantidad de números aleatorios a generar: ");
+        System.out.print("Ejecutando Ejercicio 4: Introduce la cantidad de números aleatorios a generar: ");
         int cantidad = scanner.nextInt();
 
         System.out.print("Introduce el valor mínimo del rango: ");
