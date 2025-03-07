@@ -12,6 +12,7 @@ public class Ejercicio21 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Ejecutando Ejercicio 21: Introduce un año: ");
         int año = scanner.nextInt();
+        scanner.nextLine();
 
         if (esBisiesto(año)) {
             System.out.println(año + " es un año bisiesto.");

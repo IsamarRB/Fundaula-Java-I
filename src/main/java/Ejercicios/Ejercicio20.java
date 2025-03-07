@@ -20,6 +20,7 @@ public class Ejercicio20 {
             nombres[i] = scanner.next();
             System.out.print("Introduce la nota de " + nombres[i] + ": ");
             notas[i] = scanner.nextDouble();
+            scanner.nextLine();
         }
 
         System.out.println("\nListado de alumnos:");

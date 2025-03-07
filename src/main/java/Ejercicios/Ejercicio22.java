@@ -12,6 +12,7 @@ public class Ejercicio22 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Ejecutando Ejercicio 22: Introduce el número de horas en el parking: ");
         int horas = scanner.nextInt();
+        scanner.nextLine();
 
         double costo = calcularPrecioParking(horas);
         System.out.println("El precio total es: " + costo + " euros.");

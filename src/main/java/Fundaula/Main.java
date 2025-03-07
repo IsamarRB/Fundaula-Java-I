@@ -1,7 +1,6 @@
 package Fundaula;
 
 import java.util.Scanner;
-import java.lang.reflect.InvocationTargetException;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,40 +9,34 @@ public class Main {
         // Un solo Scanner para todos los ejercicios
         Scanner scanner = new Scanner(System.in);
 
-        try {
-            for (int i = 1; i <= 22; i++) {
-                try {
-                    // Construir el nombre de la clase dinámicamente
-                    String className = "Ejercicios.Ejercicio" + i;
+        for (int i = 1; i <= 22; i++) {
+            try {
+                // Espacio para separar cada ejercicio
+                System.out.println("\n------------------------------\n");
 
-                    // Cargar la clase
-                    Class<?> clase = Class.forName(className);
+                // Construir el nombre de la clase dinámicamente
+                String className = "Ejercicios.Ejercicio" + i;
 
-                    // Verificar si la clase tiene el constructor esperado
-                    if (clase.getDeclaredConstructor(Scanner.class) != null) {
-                        // Crear instancia del ejercicio pasando el Scanner
-                        Object instancia = clase.getConstructor(Scanner.class).newInstance(scanner);
+                // Cargar la clase
+                Class<?> clase = Class.forName(className);
 
-                        // Ejecutar el método ejecutar()
-                        clase.getMethod("ejecutar").invoke(instancia);
-                    }
+                // Crear instancia del ejercicio pasando el Scanner
+                Object instancia = clase.getConstructor(Scanner.class).newInstance(scanner);
 
-                } catch (ClassNotFoundException e) {
-                    System.out.println("Ejercicio" + i + " no encontrado.");
-                } catch (NoSuchMethodException e) {
-                    System.out.println("Ejercicio" + i + " no tiene un constructor adecuado o método ejecutar().");
-                } catch (InvocationTargetException e) {
-                    System.out.println("Error en la ejecución de Ejercicio" + i + ": " + e.getCause().getMessage());
-                } catch (Exception e) {
-                    System.out.println("Error ejecutando Ejercicio" + i + ": " + e.getMessage());
-                }
+                // Ejecutar el método ejecutar()
+                clase.getMethod("ejecutar").invoke(instancia);
+
+            } catch (NoSuchMethodException e) {
+                System.out.println("Ejercicio" + i + " no tiene un método ejecutar().");
+            } catch (Exception e) {
+                System.out.println("Error ejecutando Ejercicio" + i + ": " + e.getMessage());
             }
-        } finally {
-            scanner.close();  // Asegurar que el scanner se cierra correctamente
         }
 
-        System.out.println("Todos los ejercicios ejecutados.");
+        scanner.close();
+        System.out.println("\nTodos los ejercicios ejecutados.");
     }
 }
+
 
 

@@ -18,6 +18,7 @@ public class Ejercicio18 {
             if (num > 25 && num % 2 == 0) {
                 filtrados.add(num);
             }
+            scanner.nextLine();
         }
 
         System.out.println("Ejecutando Ejercicio 18: Array original: " + Arrays.toString(numeros));

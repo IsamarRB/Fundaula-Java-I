@@ -13,9 +13,10 @@ public class Ejercicio15 {
         int contador = 0;
         int numero;
 
-        System.out.println("Ejecutando Ejercicio 15: Introduce números (-1 para salir):");
+        System.out.println("Ejecutando Ejercicio 15: Introduce números (-1 para salir): ");
         while ((numero = scanner.nextInt()) != -1) {
             contador++;
+            scanner.nextLine();
         }
 
         System.out.println("Se han introducido " + contador + " números.");

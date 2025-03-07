@@ -8,11 +8,11 @@ public class Ejercicio13 {
     public Ejercicio13(Scanner scanner) {
         this.scanner = scanner;
     }
+
     public void ejecutar() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Ejecutando Ejercicio 13: Introduce una frase: ");
         String frase = scanner.nextLine();
-        scanner.close();
 
         String fraseSinEspacios = frase.replace(" ", "");
         System.out.println("Frase sin espacios: " + fraseSinEspacios);
