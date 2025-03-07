@@ -3,11 +3,17 @@ package Ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio5 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Introduce un número para calcular su factorial: ");
+    private Scanner scanner;
+
+    public Ejercicio5(Scanner scanner) { // Se agregó la llave faltante
+        this.scanner = scanner;
+    }
+
+    public void ejecutar() {
+        System.out.print("Ejecutando Ejercicio 5: Introduce un número para calcular su factorial: ");
         int numero = scanner.nextInt();
-        scanner.close();
+
+        // No cerrar scanner aquí para evitar errores en Main
 
         System.out.println("El factorial de " + numero + " es: " + calcularFactorial(numero));
     }
@@ -20,3 +26,4 @@ public class Ejercicio5 {
         return factorial;
     }
 }
+

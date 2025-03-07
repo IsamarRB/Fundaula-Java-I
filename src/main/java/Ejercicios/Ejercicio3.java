@@ -38,7 +38,6 @@ public class Ejercicio3 {
         }
 
         System.out.println("El área del " + figura + " es: " + area);
-        scanner.close();
     }
 
     public static double calcularAreaCirculo(double radio) {
