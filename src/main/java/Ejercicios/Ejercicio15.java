@@ -3,7 +3,12 @@ package Ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio15 {
-    public static void main(String[] args) {
+    private Scanner scanner;
+
+    public Ejercicio15(Scanner scanner) {
+        this.scanner = scanner;
+    }
+    public void ejecutar() {
         Scanner scanner = new Scanner(System.in);
         int contador = 0;
         int numero;
@@ -12,7 +17,6 @@ public class Ejercicio15 {
         while ((numero = scanner.nextInt()) != -1) {
             contador++;
         }
-        scanner.close();
 
         System.out.println("Se han introducido " + contador + " números.");
     }
