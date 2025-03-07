@@ -34,7 +34,7 @@ public class Main {
         }
 
         scanner.close();
-        System.out.println("\nTodos los ejercicios ejecutados.");
+        System.out.println("\nTodos los ejercicios han sido ejecutados. Código por IsamarRB");
     }
 }
 

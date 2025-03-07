@@ -8,18 +8,19 @@ public class Ejercicio17 {
     public Ejercicio17(Scanner scanner) {
         this.scanner = scanner;
     }
-    public void ejecutar(){
+
+    public void ejecutar() {
         char[] abecedario = crearAbecedario();
         StringBuilder resultado = new StringBuilder();
 
         System.out.println("Ejecutando Ejercicio 17: Introduce posiciones del 0 al 25 (-1 para terminar): ");
+
         int posicion;
         while ((posicion = scanner.nextInt()) != -1) {
             if (posicion >= 0 && posicion < abecedario.length) {
                 resultado.append(abecedario[posicion]);
             } else {
                 System.out.println("Posición fuera de rango.");
-                scanner.nextLine();
             }
         }
 
@@ -35,4 +36,5 @@ public class Ejercicio17 {
         return letras;
     }
 }
+
 

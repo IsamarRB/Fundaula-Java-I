@@ -14,7 +14,6 @@ public class Ejercicio19 {
         double euros = scanner.nextDouble();
         System.out.print("Elige moneda (dolar, yen, libra): ");
         String moneda = scanner.next().toLowerCase();
-        scanner.nextLine();
 
         double resultado = convertirMoneda(euros, moneda);
         if (resultado != -1) {
