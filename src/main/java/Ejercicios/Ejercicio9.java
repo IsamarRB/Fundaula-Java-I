@@ -3,13 +3,17 @@ package Ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio9 {
-    public static void main(String[] args) {
+    private Scanner scanner;
+
+    public Ejercicio9(Scanner scanner) {
+        this.scanner = scanner;
+    }
+    public void ejecutar() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Introduce el límite inferior: ");
+        System.out.print("Ejecutando Ejercicio 9: Introduce el límite inferior: ");
         int min = scanner.nextInt();
         System.out.print("Introduce el límite superior: ");
         int max = scanner.nextInt();
-        scanner.close();
 
         System.out.println("Números aleatorios generados:");
         for (int i = 0; i < 10; i++) {

@@ -10,7 +10,7 @@ public class Ejercicio8 {
     }
     public void ejecutar(){
         Scanner scanner = new Scanner(System.in);
-        System.out.print("¿Cuántas ventas vas a introducir? ");
+        System.out.print("Ejecutando Ejercicio 8: ¿Cuántas ventas vas a introducir? ");
         int cantidad = scanner.nextInt();
 
         double suma = 0;

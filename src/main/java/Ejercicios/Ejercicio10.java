@@ -3,11 +3,15 @@ package Ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio10 {
-    public static void main(String[] args) {
+    private Scanner scanner;
+
+    public Ejercicio10(Scanner scanner) {
+        this.scanner = scanner;
+    }
+    public void ejecutar() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Introduce un número: ");
+        System.out.print("Ejecutando Ejercicio 10: Introduce un número: ");
         int numero = scanner.nextInt();
-        scanner.close();
 
         if (esPrimo(numero)) {
             System.out.println(numero + " es un número primo.");

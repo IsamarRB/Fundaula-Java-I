@@ -19,7 +19,7 @@ public class Ejercicio7 {
         }
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Introduce un dígito (0-9): ");
+        System.out.print("Ejecutando Ejercicio 7: Introduce un dígito (0-9): ");
         int digito = scanner.nextInt();
 
         System.out.println("Números que terminan en " + digito + ":");
