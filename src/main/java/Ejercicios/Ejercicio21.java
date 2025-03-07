@@ -3,11 +3,15 @@ package Ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio21 {
-    public static void main(String[] args) {
+    private Scanner scanner;
+
+    public Ejercicio21(Scanner scanner) {
+        this.scanner = scanner;
+    }
+    public void ejecutar() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Introduce un año: ");
+        System.out.print("Ejecutando Ejercicio 21: Introduce un año: ");
         int año = scanner.nextInt();
-        scanner.close();
 
         if (esBisiesto(año)) {
             System.out.println(año + " es un año bisiesto.");

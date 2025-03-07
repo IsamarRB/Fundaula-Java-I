@@ -3,11 +3,15 @@ package Ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio22 {
-    public static void main(String[] args) {
+    private Scanner scanner;
+
+    public Ejercicio22(Scanner scanner) {
+        this.scanner = scanner;
+    }
+    public void ejecutar() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Introduce el número de horas en el parking: ");
+        System.out.print("Ejecutando Ejercicio 22: Introduce el número de horas en el parking: ");
         int horas = scanner.nextInt();
-        scanner.close();
 
         double costo = calcularPrecioParking(horas);
         System.out.println("El precio total es: " + costo + " euros.");
