@@ -3,9 +3,14 @@ package Ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio20 {
-    public static void main(String[] args) {
+    private Scanner scanner;
+
+    public Ejercicio20(Scanner scanner) {
+        this.scanner = scanner;
+    }
+    public void ejecutar() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("¿Cuántos alumnos vas a registrar? ");
+        System.out.print("Ejecutando Ejercicio 20: ¿Cuántos alumnos vas a registrar? ");
         int cantidad = scanner.nextInt();
         String[] nombres = new String[cantidad];
         double[] notas = new double[cantidad];
@@ -16,7 +21,6 @@ public class Ejercicio20 {
             System.out.print("Introduce la nota de " + nombres[i] + ": ");
             notas[i] = scanner.nextDouble();
         }
-        scanner.close();
 
         System.out.println("\nListado de alumnos:");
         for (int i = 0; i < cantidad; i++) {

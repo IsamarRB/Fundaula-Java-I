@@ -3,13 +3,17 @@ package Ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio19 {
-    public static void main(String[] args) {
+    private Scanner scanner;
+
+    public Ejercicio19(Scanner scanner) {
+        this.scanner = scanner;
+    }
+    public void ejecutar() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Introduce la cantidad en euros: ");
+        System.out.print("Ejecutando Ejercicio 19: Introduce la cantidad en euros: ");
         double euros = scanner.nextDouble();
         System.out.print("Elige moneda (dolar, yen, libra): ");
         String moneda = scanner.next().toLowerCase();
-        scanner.close();
 
         double resultado = convertirMoneda(euros, moneda);
         if (resultado != -1) {

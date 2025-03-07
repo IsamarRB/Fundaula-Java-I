@@ -3,12 +3,17 @@ package Ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio17 {
-    public static void main(String[] args) {
+    private Scanner scanner;
+
+    public Ejercicio17(Scanner scanner) {
+        this.scanner = scanner;
+    }
+    public void ejecutar(){
         char[] abecedario = crearAbecedario();
         Scanner scanner = new Scanner(System.in);
         StringBuilder resultado = new StringBuilder();
 
-        System.out.println("Introduce posiciones del 0 al 25 (-1 para terminar):");
+        System.out.println("Ejecutando Ejercicio 17: Introduce posiciones del 0 al 25 (-1 para terminar):");
         int posicion;
         while ((posicion = scanner.nextInt()) != -1) {
             if (posicion >= 0 && posicion < abecedario.length) {
@@ -17,7 +22,6 @@ public class Ejercicio17 {
                 System.out.println("Posición fuera de rango.");
             }
         }
-        scanner.close();
 
         System.out.println("Cadena resultante: " + resultado);
     }
